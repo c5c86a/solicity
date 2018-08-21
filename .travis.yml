@@ -19,7 +19,7 @@ addons:
 cache:
   directories:
     - node_modules
-    - ~/.nvm
+    - ~/.npm
 
 before_install:
   - export CXX="g++-4.8"
