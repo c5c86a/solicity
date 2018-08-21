@@ -7,8 +7,6 @@
     "solidity-coverage": "^0.5.7"
   },
   "scripts": {
-    "build": "truffle compile",
-    "test": "truffle test",
-    "test:coverage": "solidity-coverage"
+    "test": "solidity-coverage"
   }
 }
