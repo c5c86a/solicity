@@ -32,4 +32,8 @@ install:
 script:
   - ganache-cli &
   - sleep 5
-  - npm run test:coverage && cat coverage/lcov.info | coveralls
+  - npm run test
+  - npm run test:coverage
+
+after_success:
+  - cat coverage/lcov.info | coveralls
