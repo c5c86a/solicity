@@ -16,6 +16,11 @@ addons:
       - build-essential
       - g++-4.8
 
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
 before_install:
   - export CXX="g++-4.8"
   - npm install -g npm@6.4.0
@@ -26,4 +31,6 @@ install:
 
 script:
   - ganache-cli &
+  - sleep 5
+  - truffle migrate 
   - truffle test
